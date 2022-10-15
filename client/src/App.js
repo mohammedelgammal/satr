@@ -1,5 +1,13 @@
+import Layout from "./Layout/Layout";
+import { Provider } from "react-redux";
+import store from "./app/store";
+
 const App = () => {
-  return <h1>Here is the app</h1>;
+  return (
+    <Provider store={store}>
+      <Layout />
+    </Provider>
+  );
 };
 
 export default App;
