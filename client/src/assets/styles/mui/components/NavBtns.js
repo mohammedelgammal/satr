@@ -8,4 +8,5 @@ export const styles = {
       },
     },
   },
+  button: { textTransform: "none" },
 };

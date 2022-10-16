@@ -1,15 +1,15 @@
-import { Button, Badge } from "@mui/material";
+import { Button, Badge, Stack } from "@mui/material";
 import { navBtns } from "./utils/navBtns";
 import { styles } from "../assets/styles/mui/components/NavBtns";
 
 const NavBtns = () => {
   return (
-    <>
+    <Stack direction={"row"} spacing={3}>
       {navBtns.map(({ id, title, props }, index) => (
         <Button
           key={index}
           id={id}
-          sx={{ textTransform: "none" }}
+          sx={styles.button}
           variant="ghost"
           disabled={props.disabled}
         >
@@ -28,7 +28,7 @@ const NavBtns = () => {
           {title}
         </Button>
       ))}
-    </>
+    </Stack>
   );
 };
 

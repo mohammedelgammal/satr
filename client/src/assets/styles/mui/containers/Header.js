@@ -1,7 +1,9 @@
 export const styles = {
   appBar: {
+    position: "relative",
     height: "74px",
-    width: "100vw",
+    width: "100%",
+    justifyContent: "center",
     color: "#a0a0a0",
     backgroundColor: "white",
     boxShadow: "0px 2px 30px rgba(0, 108, 116, 0.20)",

@@ -1,15 +1,15 @@
-import { Stack, Box, ThemeProvider } from "@mui/material";
+import { Stack, ThemeProvider } from "@mui/material";
 import theme from "../assets/styles/mui/theme";
 import Header from "../containers/Header";
+import Home from "../containers/Home";
 
 const Layout = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Box>
-        <Stack spacing={2}>
-          <Header />
-        </Stack>
-      </Box>
+      <Stack spacing={2}>
+        <Header />
+        <Home />
+      </Stack>
     </ThemeProvider>
   );
 };
