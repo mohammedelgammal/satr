@@ -4,6 +4,7 @@ export const styles = {
     img: {
       width: 328,
       transform: "translateX(6px)",
+      userSelect: "none",
     },
   },
 };

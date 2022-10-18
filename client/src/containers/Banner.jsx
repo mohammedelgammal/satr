@@ -1,4 +1,4 @@
-import { Box, Grid } from "@mui/material";
+import { Grid } from "@mui/material";
 import BannerText from "../components/BannerText";
 import BannerImage from "../components/BannerImg";
 
