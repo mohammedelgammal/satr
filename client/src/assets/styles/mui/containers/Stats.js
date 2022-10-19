@@ -25,7 +25,6 @@ export const styles = {
       left: 0,
       marginX: "auto",
       backgroundColor: "#deeefa",
-
       zIndex: -1,
     },
   },
