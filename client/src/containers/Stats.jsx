@@ -1,13 +1,8 @@
 import { Box, Stack, Typography } from "@mui/material";
 import { styles } from "../assets/styles/mui/containers/Stats";
+import { stats } from "./utils/Stats";
 
 const Stats = () => {
-  const stats = [
-    { num: 1909, text: "مقطع فيديو" },
-    { num: 37, text: "مشروع تطبيقي" },
-    { num: 277, text: "سؤال اختبار" },
-    { num: 234, text: "مقال" },
-  ];
   return (
     <Box sx={styles.container}>
       <Stack sx={styles.statsStack} direction="row">
