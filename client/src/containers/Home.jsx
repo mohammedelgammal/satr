@@ -5,6 +5,7 @@ import Advantages from "./Advantages";
 import EduContent from "./EduContent";
 import LandingCTA from "../components/LandingCTA";
 import { styles } from "../assets/styles/mui/containers/Home";
+import Footer from "./Footer";
 
 const Home = () => (
   <Stack sx={styles.home} spacing={4}>
@@ -13,6 +14,7 @@ const Home = () => (
     <Advantages />
     <EduContent />
     <LandingCTA />
+    <Footer />
   </Stack>
 );
 export default Home;

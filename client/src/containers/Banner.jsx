@@ -1,10 +1,11 @@
 import { Grid } from "@mui/material";
 import BannerText from "../components/BannerText";
 import BannerImage from "../components/BannerImg";
+import { styles } from "../assets/styles/mui/containers/Banner";
 
 const Banner = () => {
   return (
-    <Grid container direction="row" justifyContent="center" width="1800px">
+    <Grid container direction="row" sx={styles.banner}>
       <Grid xs={6} md={6} item>
         <BannerImage />
       </Grid>
