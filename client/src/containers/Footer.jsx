@@ -1,6 +1,7 @@
 import { Stack, Box, Link, Typography, Divider } from "@mui/material";
 import { styles } from "../assets/styles/mui/containers/Footer";
 import { logos, links } from "./utils/Footer";
+import React from "react";
 
 const Footer = () => {
   return (
@@ -15,14 +16,14 @@ const Footer = () => {
       <Stack spacing={2}>
         <Stack direction="row" spacing={1.5}>
           {links.map(({ title, to }, index) => (
-            <>
-              <Link sx={styles.link} key={index} href={to}>
+            <React.Fragment key={index}>
+              <Link sx={styles.link} href={to}>
                 {title}
               </Link>
               {index !== links.length - 1 && (
                 <Divider variant="middle" orientation="vertical" />
               )}
-            </>
+            </React.Fragment>
           ))}
         </Stack>
         <Typography sx={styles.copyrights}>

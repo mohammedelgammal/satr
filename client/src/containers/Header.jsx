@@ -15,7 +15,6 @@ const Header = () => {
             <Stack direction={"row"} spacing={3} color={"black"}>
               <Box>
                 <NavBtns />
-                <Box>{/* menus */}</Box>
               </Box>
             </Stack>
             <Logo />

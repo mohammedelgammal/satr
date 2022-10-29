@@ -8,7 +8,7 @@ const LandingCTA = () => {
     <Box style={styles.container}>
       <Stack direction="row" sx={styles.box}>
         <Box sx={styles.ctaImg}>
-          <img src={img} alt="calltoaction" srcset="" />
+          <img src={img} alt="calltoaction" />
         </Box>
         <Stack sx={styles.ctaText} spacing={4}>
           <Typography sx={styles.title}>

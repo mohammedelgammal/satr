@@ -2,8 +2,8 @@ export const styles = {
   box: {
     justifyContent: "center",
     img: {
-      width: 328,
-      transform: "translateX(6px)",
+      height: 562,
+      transform: "translateX(15px)",
       userSelect: "none",
     },
   },

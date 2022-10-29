@@ -1,6 +1,6 @@
 export const styles = {
   stack: { textAlign: "right", alignItems: "end" },
-  box: { transform: "translate(-85px, 29px)" },
+  box: { transform: "translate(-85px, -10px)" },
   title: {
     fontSize: "39px",
     fontWeight: "bolder",

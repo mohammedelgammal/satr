@@ -3,7 +3,7 @@ import { styles } from "../assets/styles/mui/components/Content";
 
 const Content = ({ src, alt, title, body, to }) => {
   return (
-    <Link sx={styles.link} overlay href={`/${to}`}>
+    <Link sx={styles.link} href={`/${to}`}>
       <Stack sx={styles.contentBox}>
         <Box sx={styles.badge}>
           <img src={src} alt={alt} />
