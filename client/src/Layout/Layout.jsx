@@ -5,6 +5,7 @@ import Header from "../containers/Header";
 import Home from "../containers/Home";
 import Footer from "../containers/Footer";
 import Paths from "../containers/Paths";
+import Courses from "../containers/Courses";
 
 const Layout = () => {
   return (
@@ -14,7 +15,7 @@ const Layout = () => {
           <Header />
           <Routes>
             <Route index path="/" element={<Home />} />
-            <Route path="list/courses" element={<>courses</>} />
+            <Route path="list/courses" element={<Courses />} />
             <Route path="courses" element={<>please subscribe first</>} />
             <Route path="list/paths" element={<Paths />} />
             <Route path="list/howto" element={<>howto</>} />
