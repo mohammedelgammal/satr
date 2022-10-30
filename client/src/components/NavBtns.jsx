@@ -1,7 +1,16 @@
-import { Button, Badge, Stack, Menu, MenuItem, Divider } from "@mui/material";
+import {
+  Button,
+  Badge,
+  Stack,
+  Menu,
+  MenuItem,
+  Divider,
+  Link,
+} from "@mui/material";
 import { navBtns } from "./utils/navBtns";
 import { useState } from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
+import { Link as RouterLink } from "react-router-dom";
 import { styles } from "../assets/styles/mui/components/NavBtns";
 
 const NavBtns = () => {
@@ -59,9 +68,13 @@ const NavBtns = () => {
           onClose={handleClose}
           sx={styles.platMenu}
         >
-          <MenuItem onClick={handleClose}>منصة كودرهب</MenuItem>
+          <Link sx={{ all: "unset" }} href="https://coderhub.sa/">
+            <MenuItem onClick={handleClose}>منصة كودرهب</MenuItem>
+          </Link>
           <Divider light />
-          <MenuItem onClick={handleClose}>منصة المبادرات والمعسكرات</MenuItem>
+          <Link sx={{ all: "unset" }} href="https://bootcamp.sa/">
+            <MenuItem onClick={handleClose}>منصة المبادرات والمعسكرات</MenuItem>
+          </Link>
         </Menu>
         <Menu
           disableScrollLock={true}
@@ -71,11 +84,17 @@ const NavBtns = () => {
           sx={styles.eduMenu}
           elevation={4}
         >
-          <MenuItem onClick={handleClose}>المسارات</MenuItem>
+          <Link sx={{ all: "unset" }} component={RouterLink} to="list/paths">
+            <MenuItem onClick={handleClose}>المسارات</MenuItem>
+          </Link>
           <Divider light />
-          <MenuItem onClick={handleClose}>الدورات</MenuItem>
+          <Link sx={{ all: "unset" }} component={RouterLink} to="list/courses">
+            <MenuItem onClick={handleClose}>الدورات</MenuItem>
+          </Link>
           <Divider light />
-          <MenuItem onClick={handleClose}>المشاريع التطبيقية</MenuItem>
+          <Link sx={{ all: "unset" }} component={RouterLink} to="list/howto">
+            <MenuItem onClick={handleClose}>المشاريع التطبيقية</MenuItem>
+          </Link>
         </Menu>
       </>
     </Stack>

@@ -1,7 +1,8 @@
+import React from "react";
+import { Link as RouterLink } from "react-router-dom";
 import { Stack, Box, Link, Typography, Divider } from "@mui/material";
 import { styles } from "../assets/styles/mui/containers/Footer";
 import { logos, links } from "./utils/Footer";
-import React from "react";
 
 const Footer = () => {
   return (
@@ -17,7 +18,7 @@ const Footer = () => {
         <Stack direction="row" spacing={1.5}>
           {links.map(({ title, to }, index) => (
             <React.Fragment key={index}>
-              <Link sx={styles.link} href={to}>
+              <Link component={RouterLink} sx={styles.link} to={to}>
                 {title}
               </Link>
               {index !== links.length - 1 && (

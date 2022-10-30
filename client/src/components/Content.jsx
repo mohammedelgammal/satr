@@ -1,9 +1,10 @@
 import { Stack, Box, Typography, Link } from "@mui/material";
+import { Link as RouterLink } from "react-router-dom";
 import { styles } from "../assets/styles/mui/components/Content";
 
 const Content = ({ src, alt, title, body, to }) => {
   return (
-    <Link sx={styles.link} href={`/${to}`}>
+    <Link component={RouterLink} sx={styles.link} to={`/${to}`}>
       <Stack sx={styles.contentBox}>
         <Box sx={styles.badge}>
           <img src={src} alt={alt} />
