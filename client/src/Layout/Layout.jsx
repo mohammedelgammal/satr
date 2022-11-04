@@ -6,6 +6,7 @@ import Home from "../containers/Home";
 import Footer from "../containers/Footer";
 import Paths from "../containers/Paths";
 import Courses from "../containers/Courses";
+import HowTo from "./../containers/HowTo";
 
 const Layout = () => {
   return (
@@ -18,7 +19,7 @@ const Layout = () => {
             <Route path="list/courses" element={<Courses />} />
             <Route path="courses" element={<>please subscribe first</>} />
             <Route path="list/paths" element={<Paths />} />
-            <Route path="list/howto" element={<>howto</>} />
+            <Route path="list/howto" element={<HowTo />} />
           </Routes>
           <Footer />
         </BrowserRouter>

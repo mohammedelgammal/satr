@@ -30,7 +30,6 @@ export const styles = {
     },
   },
   copyrights: {
-    direction: "rtl",
     color: "white",
     fontSize: 12,
     opacity: 0.8,
