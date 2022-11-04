@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import BreadCrumb from "../components/BreadCrumb";
 import SearchBox from "../components/SearchBox";
+import HowToComponent from "../components/HowTo";
 import { categories } from "./utils/HowTo.js";
 import { howtoLinks } from "./utils/BreadCrumbLinks";
 import { styles } from "../assets/styles/mui/containers/HowTo";
@@ -52,7 +53,7 @@ const HowTo = () => {
         </Stack>
         <Box sx={styles.divider} />
         <Stack sx={styles.howto} direction="row">
-          <>How to</>
+          <HowToComponent />
         </Stack>
         <Box sx={styles.divider} />
       </Stack>
