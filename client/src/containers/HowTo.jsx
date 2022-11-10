@@ -11,8 +11,8 @@ import SearchBox from "../components/SearchBox";
 import HowToComponent from "../components/HowTo";
 import { categories } from "./utils/HowTo.js";
 import { howtoLinks } from "./utils/BreadCrumbLinks";
-import { styles } from "../assets/styles/mui/containers/HowTo";
 import { useState } from "react";
+import { styles } from "../assets/styles/mui/containers/HowTo";
 
 const HowTo = () => {
   const [personName, setPersonName] = useState("");
@@ -42,9 +42,15 @@ const HowTo = () => {
               sx={styles.nativeSelect}
               value={personName}
               onChange={handleChange}
+              placeholder="الكل"
             >
               {categories.map((el, index) => (
-                <MenuItem sx={styles.menuItem} key={index} value={el}>
+                <MenuItem
+                  defaultChecked
+                  sx={styles.menuItem}
+                  key={index}
+                  value={el}
+                >
                   {el}
                 </MenuItem>
               ))}

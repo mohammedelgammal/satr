@@ -1,8 +1,8 @@
 import { configureStore } from "@reduxjs/toolkit";
-import headerReducer from "../features/layout/headerSlice";
+import layoutReducer from "../features/layout/layoutSlice";
 
 export default configureStore({
-  reducer: { header: headerReducer },
+  reducer: { layout: layoutReducer },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({ serializableCheck: false }),
 });
